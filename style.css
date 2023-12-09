@@ -356,7 +356,7 @@ nav .navbar .links li .sub-menu li{
   width: 100%;
   background: darkslateblue;
 }
-subscribe-btn,button{
+.subscribe-btn,button{
 
   background: orangered;
 
