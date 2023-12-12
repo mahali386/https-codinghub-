@@ -1,69 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<!-- Designined by Oleksandr - Codelegacy.com  -->
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Responsive Drop Down Navigation Menu | Coding Hub</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="website icon" type="png" href="image/icon.png">
-    <title>Music</title>
-</head>
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
-    <div class="wrapper">
-        <div class="music-player">
-            <div class="top">
-                <i class="fa-solid fa-chevron-down"></i>
-                <span>V-POP</span>
-                <i class="fa-solid fa-ellipsis"></i>
-            </div>
-            <div class="box-img">
-                <div class="img-music">
-                    <img src="image/ekh.jpg" alt="">
-                </div>
-            </div>
-            <div class="name-music">
-                <div class="name">Em Không Hiểu</div>
-                <div class="artist">..............</div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar"></div>
-                <div class="time">
-                    <span class="current">0:00</span>
-                    <span class="duration">3:01</span>
-                </div>
-            </div>
-            <div class="controls">
-                <i id="prev" title="Quay lại bài sau" class="fa-solid fa-backward"></i>
-                <button onclick="musicPlay()" id="play" title="Play">
-                    <i class="fa-solid fa-play"></i>
-                </button>
-                <i id="next" title="Bài tiếp theo" class="fa-solid fa-forward"></i>
-            </div>
-            <div class="volume">
-                <i class="fa-solid fa-volume-high"></i>
-                <input type="range" min="0" max="100" value="70" onchange="volume_change()" id="volume">
-            </div>
-            <div class="bottom">
-                <i class="fa-solid fa-cloud-arrow-down"></i>
-                <i class="fa-solid fa-repeat"></i>
-                <i id="fa-list" class="fa-solid fa-list"></i>
-            </div>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#">Coding Hub</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Coding Hub</span>
+          <i class='bx bx-x' ></i>
         </div>
-        <div class="list-music">
-            <div class="header-music">
-                <div class="left">
-                    <i class="fa-solid fa-list"></i>
-                    <span>Music</span>
-                </div>
-                <i class="fa-solid fa-close"></i>
-            </div>
-            <ul>
-                
+        <ul class="links">
+          <li><a href="#">HOME</a></li>
+          <li>
+            <a href="#">PROJECT</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="project.html">Project</a></li>
+              <li><a href="project-1.html">Project-1</a></li>
+              <li><a href="diwaliquatos.html">Diwali Wishing-1</a></li>
+              <li><a href="diwaliquatos.html">Diwali Wishing-2</a></li>
+              <li><a href="festival.html">Diwali Wishing-3</a></li>
+              <li><a href="happynewyear.html">Happy New Year Wishing-1</a></li>
+              <li><a href="newyearproject.html">New Year Wishing</a></li>
+              <li><a href="/A26/index.html">MUSIC PLAYER</a></li>
+              <li><a href="diwaliquatos.html">Diwali Wishing-1</a></li>
+              <li class="more">
+                <span><a href="#">Design</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="/A26/index.html">Neumorphism</a></li>
+                  <li><a href="#">Pre-loader</a></li>
+                  <li><a href="#">Glassmorphism</a></li>
+                </ul>
+              </li>
             </ul>
+          </li>
+          <li>
+            <a href="#">JAVASCRIPT</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="dynamicclock.html">Dynamic Clock</a></li>
+              <li><a href="digitalclock.html">Digital Clock</a></li>
+              <li><a href="/A10/index.html">happy new year </a></li>
+              <li><a href="/A24/index.html">Complete Website</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">CSS</a>
+            <i class='bx bxs-chevron-down css-arrow arrow '></i>
+            <ul class="css-sub-menu sub-menu">
+              <li><a href="dynamicclock.html">Dynamic Clock</a></li>
+              <li><a href="#">Form Validation</a></li>
+              <li><a href="#">Card Slider</a></li>
+              <li><a href="#">Complete Website</a></li>
+            </ul>
+          </li>
+          <li><a href="https://www.facebook.com/huding.mahali.1">Facebook</a></li>
+          <li><a href="https://chat.whatsapp.com/LBPowqr03bT9qaXJ5rWy1A">WhatsApp</a></li>
+          <div class="subscribe-btn">
+            <a href="https://linktr.ee/Mahali7?subscribe"><button type="submit">Subscribe</button></a>
+          </div>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
         </div>
+      </div>
     </div>
-    
-    <script src="app.js"></script>
+  </nav>
+  </section>
+  <script src="smoothscrol.js"></script>
+  <script src="script.js"></script>
+
 </body>
 </html>
